@@ -10,7 +10,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
-          gtag('config', 'UA-174228191-1', { 'optimize_id': OPT-MTS3K2S });
+          gtag('config', 'UA-174228191-1', { 'optimize_id': 'OPT-MTS3K2S' });
          `
         }}
       />
