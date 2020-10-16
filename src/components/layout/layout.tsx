@@ -10,7 +10,8 @@ declare var window: { dataLayer: { event: string; }[]; };
 export default function Layout(props: Props): JSX.Element {
   useEffect(() => {
     window.dataLayer = window.dataLayer || []
-    window.dataLayer.push({ event: 'optimize.activate' })
+    window.dataLayer.push({ event: 'optimize.activate' });
+    console.log('iniciou optimize');
   }, [])
   return (
     <React.Fragment>
