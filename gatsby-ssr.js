@@ -1,6 +1,6 @@
 const React = require('react');
 exports.onRenderBody = ({ setHeadComponents }) => {
-  if (process.env.NODE_ENV === `production`) {
+  if (process.env.NODE_ENV === 'production') {
     setHeadComponents([
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174228191-1"></script>,
       <script
