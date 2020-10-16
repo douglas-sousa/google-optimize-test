@@ -1,0 +1,24 @@
+.button {
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.button.dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.button.light {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.button.dodo {
+  background-color: var(--purplish-blue);
+  color: var(--gold);
+}

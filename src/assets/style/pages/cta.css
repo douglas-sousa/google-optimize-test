@@ -1,0 +1,17 @@
+#cta {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#cta h1 {
+  padding: 2rem 0;
+  font-size: 3rem;
+}
+
+#cta a {
+  font-size: 1.5rem;
+}
+
+#cta footer {
+  padding: 1rem 0;
+}

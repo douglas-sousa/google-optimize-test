@@ -1,0 +1,30 @@
+:root {
+  --purplish-blue: #CBC5E8;
+  --black: #2E282A;
+  --white: #F3F3F3;
+  --gold: #EFC501;
+  
+  font-size: 60%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  color: var(--black);
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+  width: 100%;
+}
