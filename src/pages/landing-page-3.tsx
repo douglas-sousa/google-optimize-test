@@ -9,6 +9,16 @@ declare var window: { dataLayer: { event: string; }[]; };
 export default function LandingPage(): JSX.Element {
   const [loaded, setLoaded] = useState(false);
 
+  function loadOptimize(): void {
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({ event: 'optimize.activate' });
+    setLoaded(true);
+  }
+
+  useEffect(() => {
+    loadOptimize();
+  }, []);
+
   return (
     <Loading ready={loaded}>
       <div id="landing-page">
