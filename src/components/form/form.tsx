@@ -26,7 +26,7 @@ export default function Form(): JSX.Element {
 
   return (
     <div className={css.container}>
-      <h3>Título estático</h3>
+      <h3>Título estático (deve atualizar)</h3>
       <h4>{title}</h4>
       <form>
         <input type="text" placeholder="nome" name="name" onChange={handleInputChange} />

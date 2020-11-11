@@ -17,7 +17,7 @@ export default function LandingPage(): JSX.Element {
       <Button mode="light">
         Botão dentro da página
       </Button>
-      <h1>Título dentro da página</h1>
+      <h1>Título (deve atualizar)</h1>
       <SubHeading message="Mensagem passada como prop pro subtítulo" />
       <Form />
       <img src={skyImage} alt="sky" height="800px" width="600px"/>
