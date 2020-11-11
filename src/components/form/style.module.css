@@ -1,0 +1,14 @@
+.container {
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+  font-size: 200%;
+}
+
+h4 {
+  margin-bottom: 3rem;
+}
+
+input {
+  font-size: 2rem;
+}
