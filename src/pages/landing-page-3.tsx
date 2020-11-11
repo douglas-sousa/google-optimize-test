@@ -23,11 +23,18 @@ export default function LandingPage(): JSX.Element {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT; Domain=.unruffled-roentgen-087857.netlify.app';
   }
 
+  function clearOptimizeCookies(...names: string[]): void {
+    window.addEventListener('beforeunload', () => {
+      names.forEach((name) => deleteCookie(name));
+    });
+    window.addEventListener('pagehide', () => {
+      names.forEach((name) => deleteCookie(name));
+    });
+  }
+
   useEffect(() => {
     loadOptimize();
-
-    window.addEventListener('beforeunload', () => deleteCookie('_gaexp'));
-    window.addEventListener('pagehide', () => deleteCookie('_gaexp'));
+    clearOptimizeCookies('_gaexp', '_ga', '_gid');
   }, []);
 
   return (
