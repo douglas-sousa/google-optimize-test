@@ -34,7 +34,7 @@ export default function LandingPage(): JSX.Element {
 
   useEffect(() => {
     loadOptimize();
-    // clearOptimizeCookies('_gaexp', '_ga', '_gid');
+    clearOptimizeCookies('_gaexp', '_ga', '_gid', '_gat_gtag_UA_174228191_1');
   }, []);
 
   return (
