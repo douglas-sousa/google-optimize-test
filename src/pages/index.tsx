@@ -5,7 +5,6 @@ import { Layout } from '@/components';
 import '@/assets/style/pages/home.css';
 
 declare var window: { dataLayer: { event: string; }[]; };
-
 export default function Home(): JSX.Element {
   useEffect(() => {
     window.dataLayer = window.dataLayer || []

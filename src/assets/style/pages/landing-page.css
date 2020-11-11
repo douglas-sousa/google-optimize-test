@@ -2,7 +2,6 @@
   background-color: #f1f0fb;
   color: #333;
   padding: 10px;
-  height: 100vh;
   width: 100vw;
 }
 
@@ -10,4 +9,9 @@
   color: #121212;
   font-weight: 900;
   font-size: 2.5rem;
+}
+
+#landing-page > img {
+  display: block;
+  margin: 2rem auto;
 }
