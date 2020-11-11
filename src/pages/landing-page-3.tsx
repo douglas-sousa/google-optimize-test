@@ -5,7 +5,11 @@ import { SubHeading, Button, Form, Footer, Loading } from '@/components';
 import '@/assets/style/pages/landing-page.css';
 import skyImage from '@/assets/image/sky.jpeg';
 
-declare var window: { dataLayer: { event: string; }[]; };
+declare var window: {
+  dataLayer: { event: string; }[];
+  addEventListener: (event: string, cb: Function) => void;
+};
+
 export default function LandingPage(): JSX.Element {
   const [loaded, setLoaded] = useState(false);
 
@@ -22,9 +26,8 @@ export default function LandingPage(): JSX.Element {
   useEffect(() => {
     loadOptimize();
 
-    return () => {
-      deleteCookie('_gaexp');
-    }
+    window.addEventListener('beforeunload', () => deleteCookie('_gaexp'));
+    window.addEventListener('pagehide', () => deleteCookie('_gaexp'));
   }, []);
 
   return (
