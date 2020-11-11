@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
 
   return (
     <div id="home">
-      <h1>Página principal</h1>
+      <h1>Página principal - v-new</h1>
       <Link to="/cta">Ir para página de CTA</Link>
     </div>
   );
